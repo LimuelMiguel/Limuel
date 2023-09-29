@@ -1,0 +1,104 @@
+html, body{
+	font size: 80%;
+	font-family: "Courier New",Courier,monospace;
+	letter-spacing: 0.15em;
+	background: gray;
+}
+
+
+#page {
+	max-width: 100%;
+	min-width: 100%;
+	margin: 10px auto 10px auto;
+	padding: 20px;
+	border: 4px double #000;
+	background: #ffffff url(background.jpg) center center/cover no-repeat;
+}
+h1 {
+    position: center;
+    color: white;
+}
+
+#logo {
+	width: 50%;
+	margin: 10px auto 25px auto;
+	
+}
+
+ul {
+	width: 100%;
+	padding: 5px;
+	margin: 0px auto 0px auto;
+	border-top: 2px solid #000;
+	border-bottom: 1px solid #000;
+	text-align: center;
+
+}
+
+li{
+	display: inline;
+
+}
+
+p {
+	text-align: center;
+	width: 75%;
+	margin: 20px auto 20px auto;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+a {
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 6px 18px 5px 18px;
+	font-family: Serif;
+
+}
+
+a:hover, a.on{
+	color: #cc3333;
+	background-color: transparent;
+}
+
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: #ffffff;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
